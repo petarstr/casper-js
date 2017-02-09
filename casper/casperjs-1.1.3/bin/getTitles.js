@@ -64,8 +64,8 @@ casper.start(homeUrl, function() {
           this.echo("Login form loaded. Fill&Submit.");
           casper.capture('login-form.png');
           casper.fillSelectors('form.login-form', {
-            "input[name='email']" :    "nflx@xdxdxd.de",
-            "input[name='password']" : "schwerespasswort123"
+            "input[name='email']" :    "",
+            "input[name='password']" : ""
           }, false); //dont autosubmit
         casper.click('button.btn.login-button.btn-submit.btn-small');
         });
